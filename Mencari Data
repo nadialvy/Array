@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class MencariData {
+    public static void main(String[] args) {
+        //scanner
+       Scanner input = new Scanner(System.in);
+       
+       //array nama dan print nilai dari array
+       String[] nama = {"Deanne", "Victoria", "Erna", "Nathalie", "Pamela", "Armand", "Omar", "Alvaro", "Ben", "Danny"};
+       System.out.println(Arrays.toString(nama));
+       
+       //untuk input user
+       System.out.print("Masukkan Nama : ");
+       String namapencarian = input.next(); 
+       
+       //loop for each (loop untuk array) : nilai array "nama" untuk sementara disimpan dalam var "nama1"
+        for (String nama1 : nama) {
+            if (nama1.equalsIgnoreCase(namapencarian)) {
+                System.out.println("Data Ditemukan " );
+            } 
+        }
+       }
+}
