@@ -1,0 +1,9 @@
+
+public class nyoba {
+    public static void main(String[] args) {
+        String [] cars = {"BMW", "Honda Jazz", "Ferrari"};
+        for(String car : cars){
+            System.out.println(car);
+        } 
+    }
+}
